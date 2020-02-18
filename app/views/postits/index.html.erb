@@ -1,0 +1,8 @@
+<h1> All the post it notes! </h1>
+<% link_to 'New Post-it', new_postit_path %>
+  <% @postit.each do |postit| %>
+    <h2> <%= postit.title %> </h2>
+    <%= link_to 'Show Page', postits_path(postit) %>
+    <%= link_to 'Edit', edit_postit_path(postit) %>
+    <%= link_to 'Delete', postit_path(postit) %>
+<% end %>
