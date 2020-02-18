@@ -1,14 +1,5 @@
-<h1>Pages#new</h1>
-
-<%= form_for @postits do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-
-  <%= f.label :body %>
-  <%= f.text_area :body %>
-
-  <%= f.submit %>
-<% end %>
+<h1><%= @postit.title %></h1>
+<h4><%= @postit.author %></h4>
+<p><%= @postit.body %></p>
+<p> testing testing </p>
+<%= link_to 'Back', postits_path %>

@@ -1,5 +1,6 @@
-<h1>Edit</h1>
+<h1>Edit Your Note</h1>
 
+<h2> <%= @postit.title %> </h2>
 <%= form_for @postit do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>

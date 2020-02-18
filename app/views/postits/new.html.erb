@@ -1,4 +1,14 @@
-<h1><%= @postits.title %></h1>
-<h4><%= @postits.author %></h4>
-<p><%= @postits.body %></p>
-<%= link_to 'Back', postits_path %>
+<h1>New Post-it</h1>
+
+<%= form_for @postit do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+<% end %>
