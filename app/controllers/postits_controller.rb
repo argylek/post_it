@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 class PostitsController < ApplicationController
+
   def index
     @postits = Postit.all
   end
@@ -11,10 +10,12 @@ class PostitsController < ApplicationController
 
   def new
     @postit = Postit.new
+    render partial: "form"
   end
 
   def edit
     @postit = Postit.find(params[:id])
+    render partial: "form"
   end
 
   def update
