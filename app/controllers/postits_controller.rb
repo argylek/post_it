@@ -2,7 +2,7 @@
 
 class PostitsController < ApplicationController
   def index
-    @postit = Postit.all
+    @postits = Postit.all
   end
 
   def show
