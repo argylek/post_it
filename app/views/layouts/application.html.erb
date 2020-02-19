@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <h1>Post-It note App</h1>
+    <header class='header-main-left'>
+      <%= link_to "Home", postits_path %>
+    </header>
+    <header class='header-main-right'>
+      <%= link_to 'New Post-it', new_postit_path %>
+    </header>
     <%= yield %>
   </body>
 </html>

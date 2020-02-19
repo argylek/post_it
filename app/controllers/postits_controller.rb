@@ -1,5 +1,6 @@
-class PostitsController < ApplicationController
+# frozen_string_literal: true
 
+class PostitsController < ApplicationController
   def index
     @postit = Postit.all
   end
@@ -40,6 +41,7 @@ class PostitsController < ApplicationController
   end
 
   private
+
   def postit_params
     params.require(:postit).permit(:title, :author, :body)
   end

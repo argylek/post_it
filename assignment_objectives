@@ -1,7 +1,7 @@
 Basic Objectives
 
 1. Create a new rails application
-with a postgres database.
+with a Postgres database.
 
 2. Create a model for a Note
 
@@ -19,7 +19,7 @@ with a postgres database.
 
 
 Bonus Objectives:
-Create a partial for you new and edit
+Create a partial view for your new and edit
 views and make only the title change
 depending on if you are making a new
 Note or editing a Note

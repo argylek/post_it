@@ -1,15 +1,15 @@
-<h1>Edit Your Note</h1>
+<h2>Edit Your Note</h2>
 
-<h2> <%= @postit.title %> </h2>
+<h3><%= @postit.title %></h3>
 <%= form_for @postit do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<%= f.label :title %>
+<%= f.text_field :title %>
 
-  <%= f.label :author %>
-  <%= f.text_field :author %>
+<%= f.label :author %>
+<%= f.text_field :author %>
 
-  <%= f.label :body %>
-  <%= f.text_area :body %>
+<%= f.label :body %>
+<%= f.text_area :body %>
 
-  <%= f.submit %>
+<%= f.submit %>
 <% end %>
