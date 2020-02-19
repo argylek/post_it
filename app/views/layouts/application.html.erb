@@ -11,12 +11,20 @@
 
   <body>
     <h1>Post-It note App</h1>
-    <header class='header-main-left'>
-      <%= link_to "Home", postits_path %>
+    <header class='clearfix'>
+      <div class="left-nav">
+        <ul>
+          <li><%= link_to "Home", postits_path %></li>
+        </ul>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li><%= link_to 'New Post-it', new_postit_path %></li>
+        </ul>
+      </div>
     </header>
-    <header class='header-main-right'>
-      <%= link_to 'New Post-it', new_postit_path %>
-    </header>
-    <%= yield %>
+    <div class='content'>
+      <%= yield %>
+    </div>
   </body>
 </html>

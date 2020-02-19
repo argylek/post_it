@@ -40,6 +40,7 @@ class PostitsController < ApplicationController
     redirect_to postits_path
   end
 
+
   private
 
   def postit_params

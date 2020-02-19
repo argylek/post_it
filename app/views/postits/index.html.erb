@@ -1,9 +1,9 @@
-<h2>All the post it notes!</h2>
-<%= link_to 'New Post-it', new_postit_path %>
 <% @postit.each do |postit| %>
-  <h3><%= postit.title %></h3>
-  <h4>Written by: <%= postit.author %></h4>
-  <%= link_to 'Show Note', postit_path(postit) %>
-  <%= link_to 'Edit', edit_postit_path(postit) %>
-  <%= link_to 'Delete', postit_path(postit), method: :delete %>
+  <div class='note'>
+    <h3 class='note_title'><%= postit.title %></h3>
+      <h4 class='note_writer'>Written by: <%= postit.author %></h4>
+        <div class='note_options'><%= link_to 'Show Note', postit_path(postit) %></div>
+        <div class='note_options'><%= link_to 'Edit', edit_postit_path(postit) %></div>
+        <div class='note_options'><%= link_to 'Delete', postit_path(postit), method: :delete %></div>
+    </div>
 <% end %>

@@ -1,4 +1,6 @@
-<h2><%= @postit.title %></h2>
-<h4><%= @postit.author %></h4>
-<p><%= @postit.body %></p>
+<div class='note'>
+  <h2 class='note_title'><%= @postit.title %></h2>
+  <h4 class='note_writer'>Written by: <%= @postit.author %></h4>
+  <p class='note_text'><%= @postit.body %></p>
+  </div>
 <%= link_to 'Back', postits_path %>

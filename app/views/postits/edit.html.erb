@@ -1,15 +1,3 @@
 <h2>Edit Your Note</h2>
 
-<h3><%= @postit.title %></h3>
-<%= form_for @postit do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title %>
-
-<%= f.label :author %>
-<%= f.text_field :author %>
-
-<%= f.label :body %>
-<%= f.text_area :body %>
-
-<%= f.submit %>
-<% end %>
+<%= render "form" %>
